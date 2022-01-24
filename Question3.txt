@@ -1,0 +1,58 @@
+3. Initialize On Object Creation
+
+i. Create a class Car which contains wheels and model as Instance variables.
+
+>>>Program :- 
+
+
+class Car1 
+{
+	public static void main(String[] args) 
+	{
+		
+		int wheels = 4;
+		String model = "Swift";
+
+		System.out.println("Wheels:"+wheels);
+		System.out.println("Model:"+model);
+	}
+}
+
+>>>Output :- Wheels:4
+             Model:Swift
+
+
+ii. Initialize the number of wheels of the car at the time of creating the Object of the 
+    car and assign the model of the car to the model variable and print the model after 
+    creating the object of the car class(not at the time of creating the object).
+
+>>>Program :-
+
+class Car
+{
+	int wheels;
+	String model;
+
+	Car(int Wheels, String Model){
+		wheels = Wheels;
+		model = Model;
+	}
+
+	public void carinfo(){
+		System.out.println("Model :"+model);
+		System.out.println("Wheels :"+wheels);
+	}
+
+	public static void main(String[] args)
+	{
+		Car c = new Car(4, "Swift");
+		c.carinfo();
+	}
+}
+
+
+>>>Output :- Model :Swift
+             Wheels :4
+
+
+

@@ -1,0 +1,55 @@
+1. Concept of Class and Object
+
+i. Write a program to create ‘Student’ class with rollNo and name as two instance 
+variables.
+
+>>>Program :-
+	
+		class Student {
+	
+	public static void main(String[] args) {
+		
+		int rollNo = 20;
+		String name = "Revati";
+
+		System.out.println("Student name:"+name);
+		System.out.println("Student rollNo:"+rollNo);
+	}
+}
+
+
+>>>Output :- Student name:Revati
+	     Student rollNo:20
+
+
+ii. Create two objects student1, student2 for the Student class and assign any 
+appropriate values to the objects. Display the Object content on a Console.
+
+>>>Program :-
+
+	public class Student1{
+
+		int id;
+	        String name;
+
+		public static void main(String[] args) {
+
+		Student1 s1 = new Student1();
+		Student1 s2 = new Student1();
+
+		s1.id = 101;
+		s1.name = "Revati";
+		s2.id = 102;
+		s2.name = "Sonal";
+
+		System.out.println(s1.id+" "+s1.name);
+		System.out.println(s2.id+" "+s2.name);
+
+		}
+
+}
+
+
+>>>Output :- 101 Revati
+	     102 Sonal
+		
